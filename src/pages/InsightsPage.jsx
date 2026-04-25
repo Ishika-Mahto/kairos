@@ -1,16 +1,14 @@
 import { useAuth } from "../context/AuthContext";
+import { buildInsightSignals, generateWeeklySummary } from "../utils/dashboard";
 import {
-  buildInsightSignals,
-  generateWeeklySummary,
-  getOptimalTimeWindow as getTimeWindow,
-  exportToJSON,
-  calculateSuccessMetrics,
-  generatePerformanceGraph,
   assessExecutionRisk,
+  calculateStreak,
+  calculateSuccessMetrics,
+  exportToJSON,
+  generatePerformanceGraph,
+  getOptimalTimeWindow,
   getTimeAnalysis,
-  generateCompletionTimeline,
-} from "../utils/dashboard";
-import { getOptimalTimeWindow, calculateStreak } from "../utils/features";
+} from "../utils/features";
 
 function InsightsPage() {
   const { session } = useAuth();
@@ -18,7 +16,7 @@ function InsightsPage() {
   const dashboard = session?.dashboard;
   const insights = buildInsightSignals(tasks, dashboard);
   const weeklySummary = generateWeeklySummary(tasks);
-  const optimalWindow = getTimeWindow(tasks);
+  const optimalWindow = getOptimalTimeWindow(tasks);
   const metrics = calculateSuccessMetrics(tasks);
   const perfGraph = generatePerformanceGraph(tasks);
   const executionRisk = assessExecutionRisk(tasks);
