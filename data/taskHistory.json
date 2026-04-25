@@ -1,0 +1,30 @@
+[
+  {
+    "id": "38ad88fc-07e9-4e69-8672-18f2b280ab89",
+    "task": "Mechanics Assignment",
+    "status": "No",
+    "reason": "Started too late",
+    "time": "2026-04-25T18:48:28.395Z"
+  },
+  {
+    "id": "236ac361-6aae-4a45-b3eb-b95c8266923e",
+    "task": "Finish Hackday Competition",
+    "status": "Yes",
+    "reason": "Completed",
+    "time": "2026-04-25T17:43:59.234Z"
+  },
+  {
+    "id": "7e1c8a52-19df-42bd-9048-b5d13bf8ac78",
+    "task": "Memory mode test",
+    "status": "Yes",
+    "reason": "Completed",
+    "time": "2026-04-25T12:00:00.000Z"
+  },
+  {
+    "id": "df762831-11d0-4dbe-9370-91dffc288d3d",
+    "task": "Kairos",
+    "status": "No",
+    "reason": "Unexpected interruption",
+    "time": "2026-04-25T14:43:23.353Z"
+  }
+]
